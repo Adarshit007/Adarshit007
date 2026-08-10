@@ -1,0 +1,154 @@
+```svg
+<svg width="490" height="330" viewBox="0 0 490 330"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <style>
+      .terminal {
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .label {
+        fill: #69f0a0;
+        font-weight: bold;
+      }
+
+      .value {
+        fill: #d0d7de;
+      }
+
+      .muted {
+        fill: #8b949e;
+      }
+
+      .line {
+        opacity: 0;
+        animation: fadeIn 0.6s ease-out forwards;
+      }
+
+      .line1 { animation-delay: 0.4s; }
+      .line2 { animation-delay: 0.8s; }
+      .line3 { animation-delay: 1.2s; }
+      .line4 { animation-delay: 1.6s; }
+      .line5 { animation-delay: 2.0s; }
+      .line6 { animation-delay: 2.4s; }
+      .line7 { animation-delay: 2.8s; }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateX(-12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- Terminal window -->
+  <rect
+    x="5"
+    y="5"
+    width="480"
+    height="320"
+    rx="12"
+    fill="#0d1117"
+    stroke="#30363d"
+    stroke-width="2"
+  />
+
+  <!-- Terminal header -->
+  <rect
+    x="5"
+    y="5"
+    width="480"
+    height="42"
+    rx="12"
+    fill="#161b22"
+  />
+
+  <!-- Window buttons -->
+  <circle cx="25" cy="26" r="6" fill="#ff5f56"/>
+  <circle cx="45" cy="26" r="6" fill="#ffbd2e"/>
+  <circle cx="65" cy="26" r="6" fill="#27c93f"/>
+
+  <!-- Terminal title -->
+  <text
+    x="245"
+    y="31"
+    text-anchor="middle"
+    class="terminal muted"
+    font-size="14">
+    Adarshit007@github: ~
+  </text>
+
+  <!-- Command -->
+  <text
+    x="25"
+    y="75"
+    class="terminal"
+    font-size="14">
+    <tspan fill="#39d353">$</tspan>
+    <tspan fill="#d0d7de"> whoami</tspan>
+  </text>
+
+  <!-- Role -->
+  <g class="terminal line line1">
+    <text x="25" y="105" font-size="15">
+      <tspan class="label">Role</tspan>
+      <tspan x="150" class="value">Data Analyst</tspan>
+    </text>
+  </g>
+
+  <!-- Focus -->
+  <g class="terminal line line2">
+    <text x="25" y="137" font-size="15">
+      <tspan class="label">Focus</tspan>
+      <tspan x="150" class="value">Data Analytics</tspan>
+    </text>
+  </g>
+
+  <!-- Database -->
+  <g class="terminal line line3">
+    <text x="25" y="169" font-size="15">
+      <tspan class="label">Database</tspan>
+      <tspan x="150" class="value">SQL Server</tspan>
+    </text>
+  </g>
+
+  <!-- Analytics -->
+  <g class="terminal line line4">
+    <text x="25" y="201" font-size="15">
+      <tspan class="label">Analytics</tspan>
+      <tspan x="150" class="value">Power BI</tspan>
+    </text>
+  </g>
+
+  <!-- Spreadsheets -->
+  <g class="terminal line line5">
+    <text x="25" y="233" font-size="15">
+      <tspan class="label">Sheets</tspan>
+      <tspan x="150" class="value">Excel · Google Sheets</tspan>
+    </text>
+  </g>
+
+  <!-- Python -->
+  <g class="terminal line line6">
+    <text x="25" y="265" font-size="15">
+      <tspan class="label">Code</tspan>
+      <tspan x="150" class="value">Python</tspan>
+    </text>
+  </g>
+
+  <!-- Machine Learning -->
+  <g class="terminal line line7">
+    <text x="25" y="297" font-size="15">
+      <tspan class="label">Next</tspan>
+      <tspan x="150" fill="#39d353">Machine Learning</tspan>
+    </text>
+  </g>
+
+</svg>
+```
