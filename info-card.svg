@@ -1,139 +1,240 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="490" height="330" viewBox="0 0 490 330">
 
+  <style>
+    .line {
+      opacity: 0;
+      animation: appear 0.6s ease-out forwards;
+    }
+
+    .l1 { animation-delay: 0.4s; }
+    .l2 { animation-delay: 0.8s; }
+    .l3 { animation-delay: 1.2s; }
+    .l4 { animation-delay: 1.6s; }
+    .l5 { animation-delay: 2.0s; }
+    .l6 { animation-delay: 2.4s; }
+    .l7 { animation-delay: 2.8s; }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+
+  <!-- Terminal background -->
   <rect width="490" height="330" rx="12" fill="#0d1117"/>
-  <rect x="1" y="1" width="488" height="328" rx="12" fill="none" stroke="#30363d" stroke-width="2"/>
 
-  <rect x="1" y="1" width="488" height="42" rx="12" fill="#161b22"/>
+  <rect
+    x="1"
+    y="1"
+    width="488"
+    height="328"
+    rx="12"
+    fill="none"
+    stroke="#30363d"
+    stroke-width="2"
+  />
 
+  <!-- Header -->
+  <rect
+    x="1"
+    y="1"
+    width="488"
+    height="42"
+    rx="12"
+    fill="#161b22"
+  />
+
+  <!-- Window buttons -->
   <circle cx="25" cy="22" r="6" fill="#ff5f56"/>
   <circle cx="45" cy="22" r="6" fill="#ffbd2e"/>
   <circle cx="65" cy="22" r="6" fill="#27c93f"/>
 
-  <text x="245" y="28"
-        text-anchor="middle"
-        font-family="monospace"
-        font-size="14"
-        fill="#8b949e">
+  <!-- Terminal title -->
+  <text
+    x="245"
+    y="28"
+    text-anchor="middle"
+    font-family="monospace"
+    font-size="14"
+    fill="#8b949e">
     Adarshit007@github: ~
   </text>
 
-  <text x="25" y="75"
-        font-family="monospace"
-        font-size="15"
-        fill="#39d353">
+  <!-- Command -->
+  <text
+    x="25"
+    y="75"
+    font-family="monospace"
+    font-size="15"
+    fill="#39d353">
     $
   </text>
 
-  <text x="42" y="75"
-        font-family="monospace"
-        font-size="15"
-        fill="#d0d7de">
+  <text
+    x="42"
+    y="75"
+    font-family="monospace"
+    font-size="15"
+    fill="#d0d7de">
     whoami
   </text>
 
-  <text x="25" y="110"
-        font-family="monospace"
-        font-size="15"
-        font-weight="bold"
-        fill="#69f0a0">
-    Role
-  </text>
+  <!-- Role -->
+  <g class="line l1">
+    <text
+      x="25"
+      y="110"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold"
+      fill="#69f0a0">
+      Role
+    </text>
 
-  <text x="150" y="110"
-        font-family="monospace"
-        font-size="15"
-        fill="#d0d7de">
-    Data Analyst
-  </text>
+    <text
+      x="150"
+      y="110"
+      font-family="monospace"
+      font-size="15"
+      fill="#d0d7de">
+      Data Analyst
+    </text>
+  </g>
 
-  <text x="25" y="142"
-        font-family="monospace"
-        font-size="15"
-        font-weight="bold"
-        fill="#69f0a0">
-    Focus
-  </text>
+  <!-- Focus -->
+  <g class="line l2">
+    <text
+      x="25"
+      y="142"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold"
+      fill="#69f0a0">
+      Focus
+    </text>
 
-  <text x="150" y="142"
-        font-family="monospace"
-        font-size="15"
-        fill="#d0d7de">
-    Data Analytics
-  </text>
+    <text
+      x="150"
+      y="142"
+      font-family="monospace"
+      font-size="15"
+      fill="#d0d7de">
+      Data Analytics
+    </text>
+  </g>
 
-  <text x="25" y="174"
-        font-family="monospace"
-        font-size="15"
-        font-weight="bold"
-        fill="#69f0a0">
-    Database
-  </text>
+  <!-- Database -->
+  <g class="line l3">
+    <text
+      x="25"
+      y="174"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold"
+      fill="#69f0a0">
+      Database
+    </text>
 
-  <text x="150" y="174"
-        font-family="monospace"
-        font-size="15"
-        fill="#d0d7de">
-    SQL Server
-  </text>
+    <text
+      x="150"
+      y="174"
+      font-family="monospace"
+      font-size="15"
+      fill="#d0d7de">
+      SQL Server
+    </text>
+  </g>
 
-  <text x="25" y="206"
-        font-family="monospace"
-        font-size="15"
-        font-weight="bold"
-        fill="#69f0a0">
-    Analytics
-  </text>
+  <!-- Analytics -->
+  <g class="line l4">
+    <text
+      x="25"
+      y="206"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold"
+      fill="#69f0a0">
+      Analytics
+    </text>
 
-  <text x="150" y="206"
-        font-family="monospace"
-        font-size="15"
-        fill="#d0d7de">
-    Power BI
-  </text>
+    <text
+      x="150"
+      y="206"
+      font-family="monospace"
+      font-size="15"
+      fill="#d0d7de">
+      Power BI
+    </text>
+  </g>
 
-  <text x="25" y="238"
-        font-family="monospace"
-        font-size="15"
-        font-weight="bold"
-        fill="#69f0a0">
-    Sheets
-  </text>
+  <!-- Sheets -->
+  <g class="line l5">
+    <text
+      x="25"
+      y="238"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold"
+      fill="#69f0a0">
+      Sheets
+    </text>
 
-  <text x="150" y="238"
-        font-family="monospace"
-        font-size="15"
-        fill="#d0d7de">
-    Excel + Google Sheets
-  </text>
+    <text
+      x="150"
+      y="238"
+      font-family="monospace"
+      font-size="15"
+      fill="#d0d7de">
+      Excel + Google Sheets
+    </text>
+  </g>
 
-  <text x="25" y="270"
-        font-family="monospace"
-        font-size="15"
-        font-weight="bold"
-        fill="#69f0a0">
-    Code
-  </text>
+  <!-- Python -->
+  <g class="line l6">
+    <text
+      x="25"
+      y="270"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold"
+      fill="#69f0a0">
+      Code
+    </text>
 
-  <text x="150" y="270"
-        font-family="monospace"
-        font-size="15"
-        fill="#d0d7de">
-    Python
-  </text>
+    <text
+      x="150"
+      y="270"
+      font-family="monospace"
+      font-size="15"
+      fill="#d0d7de">
+      Python
+    </text>
+  </g>
 
-  <text x="25" y="302"
-        font-family="monospace"
-        font-size="15"
-        font-weight="bold"
-        fill="#69f0a0">
-    Next
-  </text>
+  <!-- Machine Learning -->
+  <g class="line l7">
+    <text
+      x="25"
+      y="302"
+      font-family="monospace"
+      font-size="15"
+      font-weight="bold"
+      fill="#69f0a0">
+      Next
+    </text>
 
-  <text x="150" y="302"
-        font-family="monospace"
-        font-size="15"
-        fill="#39d353">
-    Machine Learning
-  </text>
+    <text
+      x="150"
+      y="302"
+      font-family="monospace"
+      font-size="15"
+      fill="#39d353">
+      Machine Learning
+    </text>
+  </g>
 
 </svg>
